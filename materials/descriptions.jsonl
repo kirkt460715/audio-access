@@ -7,4 +7,7 @@
 {"id": "desc30", "edition": "e3a", "facts": ["f6"], "start": 140, "duration": 35, "speaker": "speaker0", "recorded": false, "overlap_dialogue": 0}
 {"id": "desc31", "edition": "e3a", "facts": ["f7"], "start": 400, "duration": 45, "speaker": "speaker1", "recorded": false, "overlap_dialogue": 0}
 {"id": "desc32", "edition": "e3a", "facts": ["f8"], "start": 660, "duration": 55, "speaker": "speaker0", "recorded": false, "overlap_dialogue": 0}
+{"id": "alt1", "edition": "e1a", "facts": ["f0", "f1"], "start": 145, "duration": 90, "speaker": "speaker1", "recorded": true, "overlap_dialogue": 0}
+{"id": "alt2", "edition": "e2a", "facts": ["f3", "f4"], "start": 145, "duration": 90, "speaker": "speaker1", "recorded": true, "overlap_dialogue": 0}
+{"id": "alt3", "edition": "e3a", "facts": ["f6", "f7"], "start": 145, "duration": 90, "speaker": "speaker1", "recorded": true, "overlap_dialogue": 0}
 {"id": "new-desc", "edition": "e3b", "facts": ["f6", "f7"], "start": 320, "duration": 65, "speaker": "speaker0", "recorded": false, "overlap_dialogue": 0}
