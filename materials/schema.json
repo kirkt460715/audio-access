@@ -217,7 +217,7 @@
       },
       "returned": {
         "type": "boolean",
-        "description": "七日内续看，null 尚未成熟"
+        "description": "七日内续看，null 尚无完整观察"
       },
       "known_at": {
         "type": "string",
