@@ -1,0 +1,348 @@
+{
+  "editions": {
+    "description": "各集画面版本",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "episode": {
+        "type": "number",
+        "description": "集次"
+      },
+      "cut": {
+        "type": "string",
+        "description": "剪辑名称"
+      },
+      "duration": {
+        "type": "number",
+        "description": "秒"
+      }
+    }
+  },
+  "facts": {
+    "description": "视觉信息和前情",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "label": {
+        "type": "string",
+        "description": "事实说明"
+      },
+      "important": {
+        "type": "boolean",
+        "description": "是否关键"
+      },
+      "earlier_fact": {
+        "type": "array",
+        "description": "前情事实",
+        "ref": "facts"
+      }
+    }
+  },
+  "visual_timeline": {
+    "description": "事实出现的画面时间",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "edition": {
+        "type": "string",
+        "description": "画面版",
+        "ref": "editions"
+      },
+      "fact": {
+        "type": "string",
+        "description": "事实",
+        "ref": "facts"
+      },
+      "start": {
+        "type": "number",
+        "description": "秒"
+      },
+      "end": {
+        "type": "number",
+        "description": "秒"
+      },
+      "known_at": {
+        "type": "string",
+        "description": "映射可知时间"
+      },
+      "supersedes": {
+        "type": "string",
+        "description": "被改映射编号"
+      }
+    }
+  },
+  "dialogue": {
+    "description": "不可遮蔽对白窗口",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "edition": {
+        "type": "string",
+        "description": "版",
+        "ref": "editions"
+      },
+      "start": {
+        "type": "number",
+        "description": "开始秒"
+      },
+      "end": {
+        "type": "number",
+        "description": "结束秒"
+      }
+    }
+  },
+  "descriptions": {
+    "description": "既有及可制作的描述输入",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "edition": {
+        "type": "string",
+        "description": "适用画面",
+        "ref": "editions"
+      },
+      "facts": {
+        "type": "array",
+        "description": "能说明的事实",
+        "ref": "facts"
+      },
+      "start": {
+        "type": "number",
+        "description": "开始秒"
+      },
+      "duration": {
+        "type": "number",
+        "description": "描述所需秒"
+      },
+      "speaker": {
+        "type": "string",
+        "description": "配音人员"
+      },
+      "recorded": {
+        "type": "boolean",
+        "description": "是否已经录制"
+      },
+      "overlap_dialogue": {
+        "type": "number",
+        "description": "最大允许盖对白秒数"
+      }
+    }
+  },
+  "terminals": {
+    "description": "实际终端分发能力",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "kind": {
+        "type": "string",
+        "description": "设备类型"
+      },
+      "batch": {
+        "type": "string",
+        "description": "可更换单位 episode 或 season"
+      },
+      "accessible": {
+        "type": "boolean",
+        "description": "可选口述音轨"
+      }
+    }
+  },
+  "audiences": {
+    "description": "事前已知人群",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "terminal": {
+        "type": "string",
+        "description": "常用终端",
+        "ref": "terminals"
+      },
+      "familiarity": {
+        "type": "number",
+        "description": "熟悉度0至2"
+      },
+      "invite_probability": {
+        "type": "number",
+        "description": "试听邀请概率"
+      },
+      "need": {
+        "type": "string",
+        "description": "无障碍需要"
+      }
+    }
+  },
+  "feedback": {
+    "description": "实际试听和七日反馈",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "person": {
+        "type": "string",
+        "description": "观众",
+        "ref": "audiences"
+      },
+      "edition": {
+        "type": "string",
+        "description": "收到画面",
+        "ref": "editions"
+      },
+      "description": {
+        "type": "string",
+        "description": "收到描述",
+        "ref": "descriptions"
+      },
+      "at": {
+        "type": "string",
+        "description": "试听时间"
+      },
+      "understood": {
+        "type": "boolean",
+        "description": "理解关键事实，null 未答"
+      },
+      "returned": {
+        "type": "boolean",
+        "description": "七日内续看，null 尚未成熟"
+      },
+      "known_at": {
+        "type": "string",
+        "description": "可知时间"
+      }
+    }
+  },
+  "track_receipts": {
+    "description": "平台与终端实际可用音轨",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "terminal": {
+        "type": "string",
+        "description": "终端",
+        "ref": "terminals"
+      },
+      "editions": {
+        "type": "array",
+        "description": "实际可用画面",
+        "ref": "editions"
+      },
+      "descriptions": {
+        "type": "array",
+        "description": "实际可选描述",
+        "ref": "descriptions"
+      },
+      "at": {
+        "type": "string",
+        "description": "生效"
+      },
+      "known_at": {
+        "type": "string",
+        "description": "回执到达"
+      }
+    }
+  },
+  "rights": {
+    "description": "内容及描述授权",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "edition": {
+        "type": "string",
+        "description": "画面",
+        "ref": "editions"
+      },
+      "terminal": {
+        "type": "string",
+        "description": "终端",
+        "ref": "terminals"
+      },
+      "start": {
+        "type": "string",
+        "description": "开始"
+      },
+      "end": {
+        "type": "string",
+        "description": "结束"
+      },
+      "description_allowed": {
+        "type": "boolean",
+        "description": "允许描述交付"
+      }
+    }
+  },
+  "studio_slots": {
+    "description": "可用录音机会",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "speaker": {
+        "type": "string",
+        "description": "人员"
+      },
+      "at": {
+        "type": "string",
+        "description": "时段"
+      },
+      "minutes": {
+        "type": "number",
+        "description": "可用分钟"
+      },
+      "locked_description": {
+        "type": "string",
+        "description": "已占用描述，空为未占用"
+      }
+    }
+  },
+  "promises": {
+    "description": "已经确认的预约放映",
+    "fields": {
+      "id": {
+        "type": "string",
+        "description": "该表内稳定记录编号"
+      },
+      "terminal": {
+        "type": "string",
+        "description": "终端",
+        "ref": "terminals"
+      },
+      "editions": {
+        "type": "array",
+        "description": "承诺连续内容",
+        "ref": "editions"
+      },
+      "people": {
+        "type": "array",
+        "description": "已预约观众",
+        "ref": "audiences"
+      },
+      "date": {
+        "type": "string",
+        "description": "放映日期"
+      },
+      "confirmed_at": {
+        "type": "string",
+        "description": "确认时间"
+      }
+    }
+  }
+}

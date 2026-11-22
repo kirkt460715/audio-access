@@ -1,0 +1,3 @@
+{"id": "tv", "kind": "电视", "batch": "season", "accessible": true}
+{"id": "phone", "kind": "手机", "batch": "episode", "accessible": true}
+{"id": "legacy", "kind": "旧终端", "batch": "season", "accessible": false}

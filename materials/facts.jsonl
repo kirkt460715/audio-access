@@ -1,0 +1,9 @@
+{"id": "f0", "label": "视觉事实0", "important": true, "earlier_fact": []}
+{"id": "f1", "label": "视觉事实1", "important": false, "earlier_fact": []}
+{"id": "f2", "label": "视觉事实2", "important": false, "earlier_fact": []}
+{"id": "f3", "label": "视觉事实3", "important": true, "earlier_fact": []}
+{"id": "f4", "label": "视觉事实4", "important": false, "earlier_fact": ["f0"]}
+{"id": "f5", "label": "视觉事实5", "important": false, "earlier_fact": []}
+{"id": "f6", "label": "视觉事实6", "important": true, "earlier_fact": []}
+{"id": "f7", "label": "视觉事实7", "important": false, "earlier_fact": ["f0"]}
+{"id": "f8", "label": "视觉事实8", "important": false, "earlier_fact": []}

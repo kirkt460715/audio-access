@@ -1,0 +1,12 @@
+{"id": "righte1atv", "edition": "e1a", "terminal": "tv", "start": "2025-01-01T00:00:00Z", "end": "2025-03-30T00:00:00Z", "description_allowed": true}
+{"id": "righte1aphone", "edition": "e1a", "terminal": "phone", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte1btv", "edition": "e1b", "terminal": "tv", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte1bphone", "edition": "e1b", "terminal": "phone", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte2atv", "edition": "e2a", "terminal": "tv", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte2aphone", "edition": "e2a", "terminal": "phone", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte2btv", "edition": "e2b", "terminal": "tv", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte2bphone", "edition": "e2b", "terminal": "phone", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte3atv", "edition": "e3a", "terminal": "tv", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte3aphone", "edition": "e3a", "terminal": "phone", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte3btv", "edition": "e3b", "terminal": "tv", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}
+{"id": "righte3bphone", "edition": "e3b", "terminal": "phone", "start": "2025-01-01T00:00:00Z", "end": "2025-06-30T00:00:00Z", "description_allowed": true}

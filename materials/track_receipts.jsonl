@@ -1,0 +1,2 @@
+{"id": "trtv", "terminal": "tv", "editions": ["e1a", "e2a", "e3a"], "descriptions": ["desc10", "desc11", "desc12", "desc20", "desc21", "desc22"], "at": "2025-02-05T00:00:00Z", "known_at": "2025-02-06T00:00:00Z"}
+{"id": "trphone", "terminal": "phone", "editions": ["e1a", "e2a", "e3b"], "descriptions": ["desc10", "desc20"], "at": "2025-03-27T00:00:00Z", "known_at": "2025-03-28T00:00:00Z"}

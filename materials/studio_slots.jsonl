@@ -1,0 +1,6 @@
+{"id": "slot0", "speaker": "speaker0", "at": "2025-03-30T00:00:00Z", "minutes": 60, "locked_description": "desc30"}
+{"id": "slot1", "speaker": "speaker1", "at": "2025-03-31T00:00:00Z", "minutes": 60, "locked_description": ""}
+{"id": "slot2", "speaker": "speaker0", "at": "2025-04-01T00:00:00Z", "minutes": 60, "locked_description": ""}
+{"id": "slot3", "speaker": "speaker1", "at": "2025-04-02T00:00:00Z", "minutes": 60, "locked_description": ""}
+{"id": "slot4", "speaker": "speaker0", "at": "2025-04-03T00:00:00Z", "minutes": 60, "locked_description": ""}
+{"id": "slot5", "speaker": "speaker1", "at": "2025-04-04T00:00:00Z", "minutes": 60, "locked_description": ""}
